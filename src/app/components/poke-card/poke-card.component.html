@@ -1,4 +1,8 @@
-<p>poke-card works!</p>
-<fieldset>
-    <label for="">{{name}}</label>
-</fieldset>
+<div>
+<div class="card"  *ngIf="pokemonInput">
+    <img [src]="pokemonInput.sprites.other.dream_world.front_default">
+    <br>
+    <h4>{{pokemonInput.name}}</h4>
+  
+</div>
+</div>

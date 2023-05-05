@@ -1,5 +1,18 @@
 <p>poke-slider works!</p>
-<app-poke-card
-*ngFor="let pokemonName of pokemones" 
-[name]="pokemonName"
+
+<div class="container" style="overflow: auto;">
+    <div class="col-12 d-flex" style="padding-top: 50px;">
+        <div class="row; d-flex">
+            <div>
+                <app-poke-card
+*ngFor="let pokemon of pokemonesFromService" 
+[pokemon]="pokemon"
+
 ></app-poke-card>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
